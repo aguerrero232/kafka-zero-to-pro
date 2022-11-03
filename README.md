@@ -1,4 +1,5 @@
-# Kafka Zero To Pro ⚙️
+# Kafka Zero To Pro <img src="assets/img/kafka.png" width="30px">
+
 
 <img src="assets/img/header.png" width="100%" height="330px">
 
