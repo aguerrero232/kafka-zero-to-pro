@@ -1,15 +1,5 @@
 # <img src="../assets/img/kafka.png" width="30px"> **Kafka** - ***Section 0:*** `Resources` 🗃️
 
-<!-- 
-
-replacing md links with html links
-
-regex: \[\*\*([A-z0-9- *]{1,})\*\*\]\((https://[A-z0-9-./]{1,})\)
-replace: <a href="$2" target="_blank">***$1***</a> 
-
--->
-
-
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🏠 [**home**](../README.md)
