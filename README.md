@@ -1,6 +1,5 @@
 # Kafka Zero To Pro <img src="assets/img/kafka.png" width="30px">
 
-
 <img src="assets/img/header.png" width="100%" height="330px">
 
 <br/>
@@ -16,3 +15,13 @@
 
 <br />
 
+`Kafka` is used for building *real-time data pipelines* and *streaming apps*. It is **horizontally scalable**, **fault-tolerant**, **wicked fast**, and runs in production in **thousands of companies**.
+
+***Use cases include***
+
+* **`real-time analytics`** (e.g. clickstreams, ad impressions, IoT telemetry)
+* **`messaging systems`** (e.g. activity feeds, alert notifications, **`stream processing`**)
+* **`activity tracking`** (e.g. GPS location, user behavior)
+* **`stream processing`** (e.g. fraud detection, anomaly detection, real-time alerting)
+* **`decoupling`** **microservice`** (e.g. service oriented architecture)
+* **`microservices pub/sub`** (e.g. event-driven architecture)
