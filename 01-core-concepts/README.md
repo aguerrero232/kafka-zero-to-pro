@@ -3,10 +3,14 @@
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🏠 [**home**](../README.md)
-* 🧠 **core-concepts**:
+* 🧠 **core-concepts**
+  * 🚿 [**topics**](topics/README.md)
+  * 🗄️ [**partitions**](partitions/README.md)
 
 <br />
 
 ## **Description** 👀
 
-`Core concepts` are the ***fundamental building blocks*** of `Kafka`. These concepts are used to *create and manage* `Kafka` workflows and automation's.
+`Core concepts` are the ***fundamental building blocks*** of `Kafka`. These concepts are used to *create and manage* `Kafka` data streams.
+ 
+<br />
