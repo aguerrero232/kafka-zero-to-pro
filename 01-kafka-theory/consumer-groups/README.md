@@ -7,9 +7,9 @@ All the `consumers` in an application read data as `consumer groups`. Each `cons
 
 There are 3 delivery semantics for committing `consumer offsets`
 
-* **at least once** - `Consumer` offsets are committed *after* the message is processed. This means that if a `consumer` dies, it will read back from where it left off. This is the default delivery semantics for `consumer offsets`.
-* **at most once** - `Consumer` offsets are committed as soon as messages are received. If processing fails, some messages will be lost
-* **exactly once**
+1. **at least once** - `Consumer` offsets are committed *after* the message is processed. This means that if a `consumer` dies, it will read back from where it left off. This is the default delivery semantics for `consumer offsets`.
+2. **at most once** - `Consumer` offsets are committed as soon as messages are received. If processing fails, some messages will be lost
+3. **exactly once**
 
 
 
