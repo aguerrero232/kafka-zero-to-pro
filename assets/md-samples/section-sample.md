@@ -1,4 +1,4 @@
-# <img src="../assets/img/kafka.png" width="30px"> **Kafka** - ***Section X:*** **SECTION NAME** :section_emoji:
+# <img src="../assets/img/kafka.png" width="30px"> **Kafka** - ***Section X:*** `SECTION NAME` :section_emoji:
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
