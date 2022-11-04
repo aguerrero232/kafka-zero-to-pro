@@ -11,7 +11,7 @@
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🗃️ [***resources***](00-resources/README.md)
-* 🧠 [***core concepts***](01-core-concepts/README.md)
+* 💡 [***theories***](01-kafka-theory/README.md)
 
 <br />
 
@@ -25,7 +25,6 @@
 * **`stream processing`** (e.g. fraud detection, anomaly detection, real-time alerting)
 * **`decoupling`** **microservice`** (e.g. service oriented architecture)
 * **`microservices pub/sub`** (e.g. event-driven architecture)
-
 
 ## **Kafka** `Architecture` 🏗️
 
