@@ -42,7 +42,7 @@ Used for `Kafka` topic management. (i.e create, delete, list, describe, etc.)
     kafka-topics.sh --bootstrap-server localhost:9092 --create --topic third_topic --partitions 3 --replication-factor 2
     ```
 
-  * will error since the `replication factor` is greater than the number of `brokers` available
+  * will **error** since the `replication factor` is greater than the number of `brokers` available
 
 * **create** a `topic` with a `partition` count of `3` and a `replication factor` of `1`
 
