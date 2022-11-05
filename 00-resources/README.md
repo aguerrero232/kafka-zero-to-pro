@@ -64,7 +64,7 @@ If your lazy, or don't want to leave these docs, you can use the quick start I m
       echo $PATH
       ```
 
-   * test to see if you can run `kafka` commands
+   * test to see if you can run `kafka` commands from anywhere
 
       ```bash
       kafka-topics.sh
@@ -72,32 +72,26 @@ If your lazy, or don't want to leave these docs, you can use the quick start I m
 
 3. start up `Kafka` (using **KRaft**)
 
-   * create Kafka data directory
-
-      ```bash
-      mkdir data/kafka-kraft
-      ```
-
-   * generate a cluster UUID
+   * **generate** a cluster `UUID`
 
       ```bash
       KAFKA_CLUSTER_ID="$(kafka-storage.sh random-uuid)"
       ```
 
-   * format the log directories
+   * **format** the log directories
 
       ```bash
       kafka-storage.sh format -t "$KAFKA_CLUSTER_ID" -c "$KAFKA_CONFIG_ROOT/kraft/server.properties"
       ```
 
-   * start the server
+   * **start** the server
 
       ```bash
       kafka-server-start.sh  $KAFKA_CONFIG_ROOT/kraft/server.properties
       ```
 
    * Kafka is now running, keep this terminal open
-    * the logs are located in `/tmp/kraft-combined-logs`, and can be configured in `$KAFKA_CONFIG_ROOT/kraft/server.properties`
+   * logs are located in `/tmp/kraft-combined-logs`, and can be configured in `$KAFKA_CONFIG_ROOT/kraft/server.properties`
 
 <br>
 
