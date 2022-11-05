@@ -87,13 +87,13 @@ If your lazy, or don't want to leave these docs, you can use the quick start I m
    * format the log directories
 
       ```bash
-      kafka-storage.sh format -t "$KAFKA_CLUSTER_ID" -c "$KAFKA_CONFIG_ROOT/server.properties"
+      kafka-storage.sh format -t "$KAFKA_CLUSTER_ID" -c "$KAFKA_CONFIG_ROOT/kraft/server.properties"
       ```
 
    * start the server
 
       ```bash
-      kafka-server-start.sh  $KAFKA_CONFIG_ROOT/server.properties
+      kafka-server-start.sh  $KAFKA_CONFIG_ROOT/kraft/server.properties
       ```
 
    * Kafka is now running, keep this terminal open
