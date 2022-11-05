@@ -18,14 +18,10 @@ These are concepts used to interact with `Kafka` using the `CLI`, and come bundl
 ## Important Notes 📝
 
 * use the bootstrap server option ***EVERYWHERE***.
-
   * i.e `kafka-topics --bootstrap-server localhost:9092`
 
   since zookeeper will be deprecated in the future
-
   * i.e `kafka-topics --zookeeper localhost:2181` (don't do this, this is bad)
-
-<br>
 
 * when running a command from the CLI and you get the following error
 
