@@ -30,7 +30,7 @@ This guide will be running `Kafka` locally in `WSL2` running `Ubuntu-22.04`
 * **`messaging systems`** (e.g. activity feeds, alert notifications, **`stream processing`**)
 * **`activity tracking`** (e.g. GPS location, user behavior)
 * **`stream processing`** (e.g. fraud detection, anomaly detection, real-time alerting)
-* **`decoupling`** **microservice`** (e.g. service oriented architecture)
+* **`decoupling microservice`** (e.g. service oriented architecture)
 * **`microservices pub/sub`** (e.g. event-driven architecture)
 
 `Kafka` only accepts bytes as an input from producers and sends bytes out as an output to consumers. Messages are serialized and deserialized by the producer and consumer respectively. This allows `Kafka` to be used with any programming language. Serialization and deserialization is used only on keys and values.
