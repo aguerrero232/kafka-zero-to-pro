@@ -12,14 +12,15 @@ This guide will be running `Kafka` locally in `WSL2` running `Ubuntu-22.04`
 
 <br>
 
-
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🗃️ [***resources***](00-resources/README.md)
 * 💡 [***theories***](01-kafka-theory/README.md)
 * 🧠 [***core concepts***](02-core-concepts/README.md)
 
-<br />
+<br>
+
+## **Kafka** `Architecture` 🏗️
 
 `Kafka` is a distributed streaming platform. It is used to publish and subscribe to streams of records, similar to a message queue or enterprise messaging system. `Kafka` is used for building *real-time data pipelines* and *streaming apps*. It is **horizontally scalable**, **fault-tolerant**, **wicked fast**, and runs in production in **thousands of companies**.
 
@@ -32,9 +33,11 @@ This guide will be running `Kafka` locally in `WSL2` running `Ubuntu-22.04`
 * **`decoupling`** **microservice`** (e.g. service oriented architecture)
 * **`microservices pub/sub`** (e.g. event-driven architecture)
 
-<br>
-
-## **Kafka** `Architecture` 🏗️
-
 `Kafka` only accepts bytes as an input from producers and sends bytes out as an output to consumers. Messages are serialized and deserialized by the producer and consumer respectively. This allows `Kafka` to be used with any programming language. Serialization and deserialization is used only on keys and values.
 
+<br>
+
+<!-- 
+## **Basic** `Commands` 📝
+
+*  -->
