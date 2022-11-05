@@ -13,7 +13,9 @@
 
 These are concepts used to interact with `Kafka` using the `CLI`, and come bundled with the `Kafka` binaries. Follow the quick start guide to install `Kafka` and get started, [**located here**](../00-resources/README.md#kafka-setup-).
 
-### Important Note
+<br>
+
+## Important Notes 📝
 
 * use the bootstrap server option ***EVERYWHERE***.
 
