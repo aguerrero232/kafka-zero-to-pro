@@ -97,3 +97,41 @@ If your lazy, or don't want to leave these docs, you can use the quick start I m
       ```
 
    * Kafka is now running, keep this terminal open
+
+<br>
+
+### Kafka `Troubleshooting` <img src="../assets/img/kafka.png" width="19px">
+
+* when running a command from the CLI and you get the following error
+
+  ```bash
+  Warn [AdminCLient clientId=adminclient-1] Connection to node -1
+  ```
+
+  * this is a WSL2 networking issue
+    * stop the `Kafka` server and either KRaft or Zookeeper (depending on which you are using)
+    * then run the following commands
+
+      ```bash
+      sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+      ```
+
+      ```bash
+      sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+      ```
+
+    * then go to the `Kafka` config file `server.properites` and change the `listeners` to `PLAINTEXT://localhost:9092`
+
+      ```bash
+      cd $KAFKA_CONFIG_ROOT
+      ```
+
+      ```bash
+      nano server.properties
+      ```
+
+      ```bash
+      listeners=PLAINTEXT://localhost:9092
+      ```
+
+    * then start the `Kafka` server and either KRaft or Zookeeper (depending on which you are using)
