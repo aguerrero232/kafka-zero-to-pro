@@ -8,6 +8,11 @@
 
 <br>
 
+This guide will be running `Kafka` locally in `WSL2` running `Ubuntu-22.04`
+
+<br>
+
+
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🗃️ [***resources***](00-resources/README.md)
@@ -32,3 +37,4 @@
 ## **Kafka** `Architecture` 🏗️
 
 `Kafka` only accepts bytes as an input from producers and sends bytes out as an output to consumers. Messages are serialized and deserialized by the producer and consumer respectively. This allows `Kafka` to be used with any programming language. Serialization and deserialization is used only on keys and values.
+

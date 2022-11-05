@@ -9,7 +9,6 @@
 
 <br />
 
-
 ## **Description** 👀
 
 These are the ***core concepts*** of `Kafka`. These concepts are ***required*** to ***understand*** `Kafka` and ***how*** it ***works***. These concepts are ***required*** to ***use*** `Kafka`.
