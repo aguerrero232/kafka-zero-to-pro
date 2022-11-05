@@ -97,6 +97,7 @@ If your lazy, or don't want to leave these docs, you can use the quick start I m
       ```
 
    * Kafka is now running, keep this terminal open
+    * the logs are located in `/tmp/kraft-combined-logs`, and can be configured in `$KAFKA_CONFIG_ROOT/kraft/server.properties`
 
 <br>
 
