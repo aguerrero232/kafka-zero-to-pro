@@ -11,4 +11,4 @@
 
 ## **Description** 👀
 
-These are concepts used to interact with `Kafka` using the `CLI`, and come bundled with the `Kafka` binaries. Follow the quick start guide to install `Kafka` and get started, [**located here**](../00-resources/README.md#kafka-setup).
+These are concepts used to interact with `Kafka` using the `CLI`, and come bundled with the `Kafka` binaries. Follow the quick start guide to install `Kafka` and get started, [**located here**](../00-resources/README.md#kafka-setup-).
