@@ -50,7 +50,7 @@ Used for `Kafka` topic management. (i.e create, delete, list, describe, etc.)
     kafka-topics.sh --bootstrap-server localhost:9092 --create --topic third_topic --partitions 3 --replication-factor 1
     ```
 
-  * now it works since we only have 1 `broker` running and the `replication factor` is less than or equal to the number of `brokers` available
+  * now it works since the `replication factor` is less than or equal to the number of `brokers` available
 
 * **describe** a `topic`
 
