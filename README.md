@@ -37,7 +37,10 @@ This guide will be running `Kafka` locally in `WSL2` running `Ubuntu-22.04`
 
 <br>
 
+
 <!-- 
 ## **Basic** `Commands` 📝
 
-*  -->
+*  
+
+-->

@@ -10,11 +10,13 @@ Used for `Kafka` topic management. (i.e create, delete, list, describe, etc.)
 
 ## **Basic** `Commands` 📝
 
-* get help for `kafka-topics`
+* **get** help for `kafka-topics`
 
     ```bash
     kafka-topics --help
     ```
+
+<br>
 
 * **list** all `topics` in the cluster
 
@@ -24,17 +26,22 @@ Used for `Kafka` topic management. (i.e create, delete, list, describe, etc.)
 
   * `--bootstrap-server` is the `Kafka broker` to connect to
 
+<br>
+
 * **create** a `topic`
 
     ```bash
     kafka-topics.sh --bootstrap-server localhost:9092 --create --topic first_topic
     ```
 
+<br>
+
 * **create** a `topic` with a `partition` count of `3`
 
     ```bash
     kafka-topics.sh --bootstrap-server localhost:9092 --create --topic second_topic --partitions 3
     ```
+<br>
 
 * **create** a `topic` with a `partition` count of `3` and a `replication factor` of `2`
 
@@ -44,6 +51,8 @@ Used for `Kafka` topic management. (i.e create, delete, list, describe, etc.)
 
   * will **error** since the `replication factor` is ***greater than*** the number of `brokers` available
 
+<br>
+
 * **create** a `topic` with a `partition` count of `3` and a `replication factor` of `1`
 
     ```bash
@@ -51,6 +60,8 @@ Used for `Kafka` topic management. (i.e create, delete, list, describe, etc.)
     ```
 
   * now it works since the `replication factor` is ***less than or equal*** to the number of `brokers` available
+
+<br>
 
 * **describe** a `topic`
 
@@ -67,6 +78,8 @@ Used for `Kafka` topic management. (i.e create, delete, list, describe, etc.)
     Topic: third_topic      Partition: 1    Leader: 1       Replicas: 1     Isr: 1
     Topic: third_topic      Partition: 2    Leader: 1       Replicas: 1     Isr: 1
     ```
+
+<br>
 
 * **delete** a `topic`
 
