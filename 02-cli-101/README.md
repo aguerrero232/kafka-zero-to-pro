@@ -5,7 +5,9 @@
 * 🏠 [**home**](../README.md)
 * 👩‍💻 **cli 101**
   * 🚿 [**topics**](topics-cli/README.md)
-* 🔗 **links**
+  * 🏭 [**producers**](producer-cli/README.md)
+
+<!-- * 🔗 **links** -->
 
 <br />
 
