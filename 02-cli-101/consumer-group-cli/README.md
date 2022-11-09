@@ -27,7 +27,7 @@ Used to ***divide*** `partitions` among `consumers`.
     kafka-topics.sh --bootstrap-server localhost:9092 --create --topic third_topic --partitions 3 --replication-factor 1
     ```
 
-* start a **consumer** in the `consumer group` **my-first-application**
+* start a `consumer` in the `consumer group` **my-first-application**
 
     ```bash
     kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --group my-first-application
@@ -40,7 +40,6 @@ Used to ***divide*** `partitions` among `consumers`.
     ```
 
 * start *another* `consumer` part of the **same** `group`
-  * observe the messages being spread
 
     ```bash
     kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --group my-first-application
@@ -51,6 +50,9 @@ Used to ***divide*** `partitions` among `consumers`.
     ```bash
     kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --group my-second-application --from-beginning
     ```
+
+* observe the messages being spread
+
 
 <br />
 
