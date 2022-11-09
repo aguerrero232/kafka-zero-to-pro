@@ -7,6 +7,7 @@
   * 🚿 [**topics**](topics-cli/README.md)
   * 🏭 [**producers**](producer-cli/README.md)
   * 🍽️ [**consumers**](consumer-cli/README.md)
+  * 👥 [**consumer groups**](consumer-group-cli/README.md)
 
 <!-- * 🔗 **links** -->
 
