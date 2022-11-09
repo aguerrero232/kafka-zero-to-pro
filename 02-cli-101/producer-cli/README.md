@@ -11,6 +11,28 @@
 ## **Basic** `Commands` 📝
 
 * **produce** data to a `topic`
+  
+    ```bash
+    kafka-console-producer.sh --bootstrap-server <kafka-broker> --topic <topic-name>
+    ```
+
+* **produce** data to a `topic` with properties
+
+    ```bash
+    kafka-console-producer.sh --bootstrap-server <kafka-broker> --topic <topic-name> --producer-property <property-name>=<property-value>
+    ```
+
+* **produce** data to a `topic` with properties and a `key`
+
+    ```bash
+    kafka-console-producer.sh --bootstrap-server <kafka-broker> --topic <topic-name> --property parse.key=true --property key.separator=<key-value-separator>
+    ```
+
+<br>
+
+## **Examples** 🧩
+
+* **produce** data to a `topic`
 
   ```bash
     kafka-console-producer.sh --bootstrap-server localhost:9092 --topic first_topic 

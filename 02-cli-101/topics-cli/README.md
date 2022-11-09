@@ -10,6 +10,58 @@ Used for `Kafka` topic management. (i.e create, delete, list, describe, etc.)
 
 ## **Basic** `Commands` 📝
 
+* **get** `topics` functionalities
+
+  ```bash
+  kafka-topics.sh
+  ```
+
+* **get** list of `topics`
+
+  ```bash
+  kafka-topics.sh --bootstrap-server <kafka-broker> --list
+  ```
+
+* **create** a `topic`
+
+  ```bash
+  kafka-topics.sh --bootstrap-server <kafka-broker> --topic <topic-name> --create
+  ```
+
+* **create** a `topic` with `partitions`
+
+  ```bash
+  kafka-topics.sh --bootstrap-server <kafka-broker> --topic <topic-name> --create --partitions <number-of-partitions>
+  ```
+
+* **create** a `topic` with `replication-factor`
+
+  ```bash
+  kafka-topics.sh --bootstrap-server <kafka-broker> --topic <topic-name> --create --replication-factor <replication-factor>
+  ```
+
+* **create** a `topic` with `partitions` and `replication-factor`
+
+  ```bash
+  kafka-topics.sh --bootstrap-server <kafka-broker> --topic <topic-name> --create --partitions <number-of-partitions> --replication-factor <replication-factor>
+  ```
+
+* **describe** a `topic`
+
+  ```bash
+  kafka-topics.sh --bootstrap-server <kafka-broker> --topic <topic-name> --describe
+  ```
+
+* **delete** a `topic`
+
+  ```bash
+  kafka-topics.sh --bootstrap-server <kafka-broker> --topic <topic-name> --delete
+  ```
+
+<br>
+
+## **Examples** 🧩
+
 * **get** help for `kafka-topics`
 
     ```bash
