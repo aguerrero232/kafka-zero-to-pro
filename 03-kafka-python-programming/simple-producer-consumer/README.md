@@ -132,7 +132,7 @@ THis is a simple producer and consumer program that uses the `kafka-python` libr
 
   * output
 
-    ```json
+    ```yaml
         [
             {
                 _id: ObjectId("636beacf8d55a7507a4799a1"),
