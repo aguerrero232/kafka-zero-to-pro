@@ -17,6 +17,7 @@ This guide will be running `Kafka` locally in `WSL2` running `Ubuntu-22.04`
 * 🗃️ [***resources***](00-resources/README.md)
 * 💡 [***theories***](01-kafka-theory/README.md)
 * 👩‍💻 [***cli 101***](02-cli-101/README.md)
+* 🐍 [***programming***](03-kafka-programming/README.md)
 
 <br>
 

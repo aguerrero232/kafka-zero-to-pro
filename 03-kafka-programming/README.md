@@ -1,9 +1,9 @@
-# <img src="../assets/img/kafka.png" width="30px"> **Kafka** - ***Section 3:*** `Python Programming` 🐍
+# <img src="../assets/img/kafka.png" width="30px"> **Kafka** - ***Section 3:*** `Programming` 🐍
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🏠 [**home**](../README.md)
-* 🐍 **python programming**
+* 🐍 **programming**
   * 🚿 [**simple producer and consumer program**](simple-producer-consumer/README.md)
 * 🔗 **links**
 
