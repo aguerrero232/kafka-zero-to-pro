@@ -1,4 +1,4 @@
-# <img src="../../assets/img/kafka.png" width="30px"> **Kafka** - **Simple** ***Producer*** *and* ***Consumer*** `Python Programming` 🚿
+# <img src="../../assets/img/kafka.png" width="30px"> **Kafka** - **Simple** ***Producer*** *and* ***Consumer*** `Program` 🚿
 
 ## **Description** 👀
 
