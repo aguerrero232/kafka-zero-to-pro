@@ -110,10 +110,9 @@
             Topic: new_topic_2      Partition: 2    Leader: 1       Replicas: 1     Isr: 1
             ```
 
-            * even though `Kafka` provides this functionality, its best to **create** `topics` before producing to them!
+          * even though `Kafka` provides this functionality, its best to **create** `topics` before producing to them!
 
 <br>
-
 
 * **produce** to a `topic` with a **key**
 
@@ -123,12 +122,8 @@
     >name:Guerrero
     ```
 
-<br />
 
-<!-- 
-## **Examples** 🧩
 
-<br />
--->
+    
 
 [↩️](../README.md)
