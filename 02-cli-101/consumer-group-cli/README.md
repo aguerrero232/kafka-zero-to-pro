@@ -10,10 +10,16 @@ Used to ***divide*** `partitions` among `consumers`.
 
 ## **Basic** `Commands` 📝
 
-* start a `consumer` in a `group`
+* **start** a `consumer` in a `consumer group`
 
     ```bash
     kafka-console-consumer.sh --bootstrap-server <kafka-broker> --topic <topic-name> --group <group-name>
+    ```
+
+* **describe** a `consumer group`
+
+    ```bash
+    kafka-consumer-groups.sh --bootstrap-server <kafka-broker> --group <group-name> --describe
     ```
 
 <br />
@@ -24,7 +30,7 @@ Used to ***divide*** `partitions` among `consumers`.
   * its necessary to have **at least** 2 `partitions` to make use of a `consumer group`
 
     ```bash
-    kafka-topics.sh --bootstrap-server localhost:9092 --create --topic third_topic --partitions 3 --replication-factor 1
+    kafka-topics.sh --bootstrap-server localhost:9092 --create --topic first_topic --partitions 3 --replication-factor 1
     ```
 
 * start a `consumer` in the `consumer group` **my-first-application**
@@ -52,6 +58,23 @@ Used to ***divide*** `partitions` among `consumers`.
     ```
 
 * observe the messages being spread
+
+* describe the `consumer group`
+
+    ```bash
+    kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group my-first-application --describe
+    ```
+
+  * output
+
+  ```bash
+   🚀  kafka-zero-to-pro ❯ kafka-consumer-groups.sh --bootstrap-server localhost:9092  --describe --group my-first-group
+
+  GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                           HOST            CLIENT-ID
+  my-first-group  first_topic     0          5               5               0               console-consumer-5d028f33-0549-4826-a719-70b6188d5f52 /127.0.0.1      console-consumer
+  my-first-group  first_topic     1          2               2               0               console-consumer-5d028f33-0549-4826-a719-70b6188d5f52 /127.0.0.1      console-consumer
+  my-first-group  first_topic     2          1               1               0               console-consumer-c5ff906d-9abc-40d2-83d1-134ead27a552 /127.0.0.1      console-consumer
+  ```
 
 
 <br />
