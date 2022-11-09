@@ -1,14 +1,17 @@
-# <img src="../assets/img/kafka.png" width="30px"> **Kafka** - ***Section 3:*** `Programming` 🐍
+# <img src="../assets/img/kafka.png" width="30px"> **Kafka** - ***Section 3:*** `Programming` 👨‍💻
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🏠 [**home**](../README.md)
-* 🐍 **programming**
-  * 🚿 [**simple producer and consumer program**](simple-producer-consumer/README.md)
+* 👨‍💻 **programming**
+* 🐍 **python**
+  * 🛠️ [**basics**](kafka-basics-python/README.md)
+* ☕ **java**
+  * 🛠️ [**basics**](kafka-basics-java/README.md)  
 * 🔗 **links**
 
 <br />
 
 ## **Description** 👀
 
-This section is used to demonstrate how to use the `kafka-python` library to produce and consume messages from a Kafka topic.
+This section is used to demonstrate how to use to produce and consume messages from a Kafka topic programmatically.

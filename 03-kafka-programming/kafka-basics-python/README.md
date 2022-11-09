@@ -1,8 +1,8 @@
-# <img src="../../assets/img/kafka.png" width="30px"> **Kafka** - **Simple** ***Producer*** *and* ***Consumer*** `Program` 🚿
+# <img src="../../assets/img/kafka.png" width="30px"> **Kafka** - ***Kafka Basics***: `Python` 🛠️
 
 ## **Description** 👀
 
-THis is a simple producer and consumer program that uses the `kafka-python` library to produce and consume messages from a Kafka topic. Data is also stored in a MongoDB database.
+This is a simple producer and consumer program that uses the `kafka-python` library to produce and consume messages from a Kafka topic. Data is also stored in a MongoDB database.
 
 ## **Prerequisites** 📋
 
