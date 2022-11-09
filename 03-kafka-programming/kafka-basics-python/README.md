@@ -41,7 +41,6 @@ This is a simple producer and consumer program that uses the `kafka-python` libr
         value_deserializer=lambda x: loads(x.decode("utf-8")),
     )
 
-
     my_client = MongoClient("mongodb://localhost:27017")
 
     try:
