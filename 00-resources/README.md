@@ -27,11 +27,17 @@ Kafkas own quick start guide for setting up `Kafka`
 
 If your lazy, or don't want to leave these docs, you can use the quick start I made below.
 
-1. get kafka
+1. get the **java runtime environment** (`jre`)
+
+   ```bash
+   sudo apt install default-jre
+   ```
+
+2. get `kafka`
    * download kafka
 
       ```bash
-      wget https://dlcdn.apache.org/kafka/3.1.0/kafka_2.13-3.1.0.tgz
+      wget https://dlcdn.apache.org/kafka/3.3.1/kafka_2.13-3.3.1.tgz
       ```
 
    * extract the tar file
@@ -46,7 +52,7 @@ If your lazy, or don't want to leave these docs, you can use the quick start I m
       mv kafka_2.13-3.3.1 ~/
       ```
 
-2. set up your environment variables
+3. set up your environment variables
 
    * go to you `.bashrc` or `.profile` file and add the following lines
 
@@ -70,7 +76,7 @@ If your lazy, or don't want to leave these docs, you can use the quick start I m
       kafka-topics.sh
       ```
 
-3. start up `Kafka` (using **KRaft**)
+4. start up `Kafka` (using **KRaft**)
 
    * **generate** a cluster `UUID`
 

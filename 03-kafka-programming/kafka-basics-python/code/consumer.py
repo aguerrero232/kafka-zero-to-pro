@@ -1,36 +1,31 @@
-from kafka import KafkaConsumer
-from json import loads
-from pymongo import MongoClient
+from aiokafka import AIOKafkaConsumer
+import asyncio
 
 
-consumer = KafkaConsumer(
-    "third_topic",
-    bootstrap_servers=["localhost:9092"],
-    auto_offset_reset="earliest",
-    enable_auto_commit=True,
-    group_id="my-first-group",
-    value_deserializer=lambda x: loads(x.decode("utf-8")),
-)
-
-
-my_client = MongoClient("mongodb://localhost:27017")
-
-try:
-    my_db = my_client["third_topic"]
-    my_collection = my_db["third_topic"]
-except Exception as e:
-    print(e)
-
-for message in consumer:
-    print(f"{message.value}")
-    j_msg = {
-        "message": message.value,
-        "topic": message.topic,
-        "partition": message.partition,
-        "offset": message.offset,
-        "timestamp": message.timestamp,
-    }
+async def consume():
+    consumer = AIOKafkaConsumer(
+        "my_topic",
+        "my_other_topic",
+        bootstrap_servers="localhost:9092",
+        group_id="my-group",
+    )
+    # Get cluster layout and join group `my-group`
+    await consumer.start()
     try:
-        my_collection.insert_one(j_msg)
-    except Exception as e:
-        print(e)
+        # Consume messages
+        async for msg in consumer:
+            print(
+                "consumed: ",
+                msg.topic,
+                msg.partition,
+                msg.offset,
+                msg.key,
+                msg.value,
+                msg.timestamp,
+            )
+    finally:
+        # Will leave consumer group; perform autocommit if enabled.
+        await consumer.stop()
+
+
+asyncio.run(consume())

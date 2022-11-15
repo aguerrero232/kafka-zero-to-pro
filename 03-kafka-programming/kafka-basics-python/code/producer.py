@@ -1,30 +1,17 @@
-from json import dumps
-from kafka import KafkaProducer
+from aiokafka import AIOKafkaProducer
+import asyncio
 
 
-def send_message(producer, topic, message=None):
-    if message is not None:
-        future = producer.send(topic, message)
-        future.get(timeout=60)
+async def send_one():
+    producer = AIOKafkaProducer(bootstrap_servers="localhost:9092")
+    # Get cluster layout and initial topic/partition leadership information
+    await producer.start()
+    try:
+        # Produce message
+        await producer.send_and_wait("my_topic", b"Super message")
+    finally:
+        # Wait for all pending messages to be delivered or expire.
+        await producer.stop()
 
 
-def run(brokers):
-    producer = KafkaProducer(
-        # default is localhost:9092, but we can specify multiple brokers
-        bootstrap_servers=brokers,
-        # how the data should be serialized before sending to the broker
-        value_serializer=lambda x: dumps(x).encode("utf-8"),
-    )
-    return producer
-
-
-if __name__ == "__main__":
-    producer = run(["localhost:9092"])
-    while True:
-        try:
-            line = input()
-            send_message(producer, "third_topic", line)
-        except KeyboardInterrupt:
-            break
-    producer.flush()
-    producer.close()
+asyncio.run(send_one())
